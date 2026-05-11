@@ -25,7 +25,8 @@ data/entropy/
 data/features/
 data/results/
 
-# FRED API key
+# Secrets
+.env
 config.py
 
 # Claude

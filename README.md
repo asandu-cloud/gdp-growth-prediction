@@ -1,6 +1,6 @@
 # Entropy of the Yield Curve as a Macroeconomic Growth Signal
 
-Master's thesis data pipeline. Tests whether Shannon and Tsallis entropy of the US Treasury yield curve predicts real GDP growth.
+Data Pipeline. Tests whether Shannon and Tsallis entropy of the US Treasury yield curve predicts real GDP growth.
 
 ## Pipeline
 
