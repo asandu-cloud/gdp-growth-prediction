@@ -19,11 +19,11 @@ build/
 .idea/
 
 # Data (large files, reproduced by pipeline)
-data/raw/
-data/processed/
-data/entropy/
-data/features/
-data/results/
+thesis_pipeline/data/raw/
+thesis_pipeline/data/processed/
+thesis_pipeline/data/entropy/
+thesis_pipeline/data/features/
+thesis_pipeline/data/results/
 
 # Secrets
 .env
