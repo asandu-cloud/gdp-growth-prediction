@@ -1,0 +1,33 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Data (large files, reproduced by pipeline)
+data/raw/
+data/processed/
+data/entropy/
+data/features/
+data/results/
+
+# FRED API key
+config.py
+
+# Claude
+.claude/
+CLAUDE.md
