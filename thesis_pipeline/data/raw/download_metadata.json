@@ -1,0 +1,112 @@
+{
+  "download_timestamp": "2026-05-12T02:02:54.944208",
+  "start_date_requested": "1982-01-01",
+  "sp500_source": "yfinance",
+  "series": {
+    "DGS3MO": {
+      "label": "3-Month",
+      "total_observations": 11571,
+      "non_null_observations": 11090,
+      "first_date": "1982-01-01",
+      "last_date": "2026-05-08"
+    },
+    "DGS6MO": {
+      "label": "6-Month",
+      "total_observations": 11571,
+      "non_null_observations": 11090,
+      "first_date": "1982-01-01",
+      "last_date": "2026-05-08"
+    },
+    "DGS1": {
+      "label": "1-Year",
+      "total_observations": 11571,
+      "non_null_observations": 11090,
+      "first_date": "1982-01-01",
+      "last_date": "2026-05-08"
+    },
+    "DGS2": {
+      "label": "2-Year",
+      "total_observations": 11571,
+      "non_null_observations": 11090,
+      "first_date": "1982-01-01",
+      "last_date": "2026-05-08"
+    },
+    "DGS3": {
+      "label": "3-Year",
+      "total_observations": 11571,
+      "non_null_observations": 11090,
+      "first_date": "1982-01-01",
+      "last_date": "2026-05-08"
+    },
+    "DGS5": {
+      "label": "5-Year",
+      "total_observations": 11571,
+      "non_null_observations": 11090,
+      "first_date": "1982-01-01",
+      "last_date": "2026-05-08"
+    },
+    "DGS7": {
+      "label": "7-Year",
+      "total_observations": 11571,
+      "non_null_observations": 11090,
+      "first_date": "1982-01-01",
+      "last_date": "2026-05-08"
+    },
+    "DGS10": {
+      "label": "10-Year",
+      "total_observations": 11571,
+      "non_null_observations": 11090,
+      "first_date": "1982-01-01",
+      "last_date": "2026-05-08"
+    },
+    "A191RL1Q225SBEA": {
+      "label": "Real GDP Growth",
+      "total_observations": 177,
+      "non_null_observations": 177,
+      "first_date": "1982-01-01",
+      "last_date": "2026-01-01"
+    },
+    "DFF": {
+      "label": "Federal Funds Rate",
+      "total_observations": 16199,
+      "non_null_observations": 16199,
+      "first_date": "1982-01-01",
+      "last_date": "2026-05-08"
+    },
+    "DBAA": {
+      "label": "Moody's Baa Corporate Bond Yield",
+      "total_observations": 10527,
+      "non_null_observations": 10124,
+      "first_date": "1986-01-02",
+      "last_date": "2026-05-08"
+    },
+    "DAAA": {
+      "label": "Moody's Aaa Corporate Bond Yield",
+      "total_observations": 11310,
+      "non_null_observations": 10883,
+      "first_date": "1983-01-03",
+      "last_date": "2026-05-08"
+    },
+    "SP500": {
+      "label": "S&P 500",
+      "total_observations": 11178,
+      "non_null_observations": 11178,
+      "first_date": "1982-01-04",
+      "last_date": "2026-05-11"
+    },
+    "IC4WSA": {
+      "label": "Initial Claims 4-Week MA",
+      "total_observations": 2314,
+      "non_null_observations": 2314,
+      "first_date": "1982-01-02",
+      "last_date": "2026-05-02"
+    },
+    "IPMAN": {
+      "label": "Industrial Production: Manufacturing",
+      "total_observations": 531,
+      "non_null_observations": 531,
+      "first_date": "1982-01-01",
+      "last_date": "2026-03-01"
+    }
+  }
+}
