@@ -57,16 +57,36 @@ def download_sp500_yfinance() -> pd.Series | None:
         return None
 
 
+def load_napm_local() -> pd.Series | None:
+    """Load NAPM from local CSV (not available on FRED since 2016)."""
+    path = DATA_RAW / "NAPM.csv"
+    if not path.exists():
+        print("    FAILED: NAPM.csv not found in data/raw/", file=sys.stderr)
+        return None
+    print("  Loading NAPM from local CSV...")
+    df = pd.read_csv(path, sep=";", decimal=",", encoding="utf-8-sig")
+    df["date"] = pd.to_datetime(df["date"], format="%d/%m/%y")
+    # Fix 2-digit year: pandas parses "82" as 2082; shift to 1900s where needed
+    df.loc[df["date"].dt.year > 2050, "date"] -= pd.DateOffset(years=100)
+    series = df.set_index("date")["value"].rename("NAPM").sort_index()
+    print(f"    {len(series)} obs, {series.index.min().date()} to {series.index.max().date()}")
+    return series
+
+
 def download_all_series() -> dict:
     """
     Download every series in ALL_SERIES from FRED.
     Falls back to yfinance for SP500 if FRED data is truncated.
+    Loads NAPM from local CSV (removed from FRED in 2016).
     """
     fred = get_fred_client()
     downloaded = {}
     sp500_source = "FRED"
 
     for series_id, label in ALL_SERIES.items():
+        if series_id == "NAPM":
+            downloaded[series_id] = load_napm_local()
+            continue
         data = download_fred_series(fred, series_id, label)
         downloaded[series_id] = data
 

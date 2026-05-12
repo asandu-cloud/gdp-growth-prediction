@@ -82,11 +82,10 @@ def build_quarterly_panel(daily_yields: pd.DataFrame,
     q_ic4wsa = ic4wsa.resample("QE").last()
     q_ic4wsa.name = "IC4WSA"
 
-    # IPMAN (monthly level index): MoM % change, last month of quarter
-    ipman = load_raw_csv("IPMAN").dropna()
-    ipman_mom = ipman.pct_change() * 100
-    q_ipman = ipman_mom.resample("QE").last()
-    q_ipman.name = "IPMAN_mom_pct"
+    # NAPM / ISM Manufacturing PMI (monthly diffusion index): last month of quarter
+    napm = load_raw_csv("NAPM").dropna()
+    q_napm = napm.resample("QE").last()
+    q_napm.name = "NAPM"
 
     # GDP: already quarterly, re-index to quarter-end
     gdp = load_raw_csv(GDP_SERIES_ID).dropna()
@@ -106,7 +105,7 @@ def build_quarterly_panel(daily_yields: pd.DataFrame,
         "credit_spread_Baa_Aaa": q_credit_spread,
         "SP500_return": q_sp500_ret,
         "IC4WSA": q_ic4wsa,
-        "IPMAN_mom_pct": q_ipman,
+        "NAPM": q_napm,
     })
 
     for col in MATURITY_IDS:
