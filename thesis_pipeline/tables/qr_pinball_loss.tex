@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\caption{Quantile Regression Pinball Loss ($\tau = 0.1$)}
+\label{tab:qr_pinball}
+\footnotesize
+\begin{tabular}{llrccc}
+\toprule
+Method & Spec & $h$ & $N$ & Pinball & Pinball$^*$ \\
+\midrule
+  A & spec1 & 1 & 104 & 0.6303 & 0.5873 \\
+  A & spec1 & 2 & 103 & 0.6061 & 0.5893 \\
+  A & spec1 & 4 & 101 & 0.4575 & 0.4510 \\
+  A & spec2 & 1 & 104 & 0.7693 & 0.7276 \\
+  A & spec2 & 2 & 103 & 0.6012 & 0.5844 \\
+  A & spec2 & 4 & 101 & 0.4331 & 0.4264 \\
+  A & spec3 & 1 & 104 & 0.5835 & 0.5402 \\
+  A & spec3 & 2 & 103 & 0.6361 & 0.6226 \\
+  A & spec3 & 4 & 101 & 0.4597 & 0.4492 \\
+  B & spec1 & 1 & 104 & 0.6303 & 0.5873 \\
+  B & spec1 & 2 & 103 & 0.6061 & 0.5893 \\
+  B & spec1 & 4 & 101 & 0.4575 & 0.4510 \\
+  B & spec2 & 1 & 104 & 0.6240 & 0.5832 \\
+  B & spec2 & 2 & 103 & 0.5988 & 0.5820 \\
+  B & spec2 & 4 & 101 & 0.4200 & 0.4131 \\
+  B & spec3 & 1 & 104 & 0.6019 & 0.5586 \\
+  B & spec3 & 2 & 103 & 0.6091 & 0.6008 \\
+  B & spec3 & 4 & 101 & 0.4780 & 0.4729 \\
+\bottomrule
+\multicolumn{6}{l}{\footnotesize $^*$ Excluding 2020Q2.} \\
+\end{tabular}
+\end{table}

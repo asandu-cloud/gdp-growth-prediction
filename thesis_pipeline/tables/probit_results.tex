@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\caption{Probit Out-of-Sample Performance}
+\label{tab:probit}
+\footnotesize
+\begin{tabular}{llrccccc}
+\toprule
+Method & Spec & $h$ & $N$ & QPS & AUROC & QPS$^*$ & AUROC$^*$ \\
+\midrule
+  A & spec1 & 1 & 104 & 0.5243 & 0.5490 & 0.5263 & 0.5413 \\
+  A & spec1 & 2 & 103 & 0.4709 & 0.6294 & 0.4755 & 0.6199 \\
+  A & spec1 & 4 & 101 & 0.5418 & 0.4557 & 0.5472 & 0.4418 \\
+  A & spec2 & 1 & 104 & 0.5425 & 0.5439 & 0.5446 & 0.5365 \\
+  A & spec2 & 2 & 103 & 0.4950 & 0.5937 & 0.4999 & 0.5832 \\
+  A & spec2 & 4 & 101 & 0.5693 & 0.4033 & 0.5749 & 0.3884 \\
+  B & spec1 & 1 & 104 & 0.5243 & 0.5490 & 0.5263 & 0.5413 \\
+  B & spec1 & 2 & 103 & 0.4709 & 0.6294 & 0.4755 & 0.6199 \\
+  B & spec1 & 4 & 101 & 0.5418 & 0.4557 & 0.5472 & 0.4418 \\
+  B & spec2 & 1 & 104 & 0.5269 & 0.5343 & 0.5289 & 0.5258 \\
+  B & spec2 & 2 & 103 & 0.4771 & 0.6266 & 0.4817 & 0.6170 \\
+  B & spec2 & 4 & 101 & 0.5583 & 0.4102 & 0.5639 & 0.3951 \\
+\bottomrule
+\multicolumn{8}{l}{\footnotesize $^*$ Excluding 2020Q2.} \\
+\end{tabular}
+\end{table}

@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{Random Forest vs.\ OLS under Specification (3)}
+\label{tab:rf_vs_ols}
+\footnotesize
+\begin{tabular}{llrcccc}
+\toprule
+Method & $h$ & $N$ & OLS RMSE & RF RMSE & OLS RMSE$^*$ & RF RMSE$^*$ \\
+\midrule
+  A & 1 & 104 & 6.768 & 5.011 & 5.097 & 3.812 \\
+  A & 2 & 103 & 4.464 & 3.299 & 4.232 & 2.784 \\
+  A & 4 & 101 & 3.765 & 2.219 & 3.682 & 1.948 \\
+  B & 1 & 104 & 6.356 & 5.010 & 4.126 & 3.807 \\
+  B & 2 & 103 & 3.446 & 3.318 & 2.923 & 2.769 \\
+  B & 4 & 101 & 2.221 & 2.207 & 2.050 & 1.917 \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize $^*$ Excluding 2020Q2.} \\
+\end{tabular}
+\end{table}
